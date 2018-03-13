@@ -21,8 +21,13 @@ public class ProductService{
     }
 
     public List<Product> updateProducts(List<Product> productList){
+
+                System.out.println("updateProducts");
         productList.stream().forEach((p)->{
-            productRepo.findById((int) p.getId()).ifPresent((product)-> product.reduceAmount(p.getAmount()));
+            productRepo.findById((int) p.getId()).ifPresent((product)-> {
+                product.reduceAmount(p.getAmount());
+                productRepo.save(product) ;
+            });
         });
         return (List<Product>) productRepo.findAll();
     }
