@@ -22,7 +22,7 @@ public class ProductService{
 
     public List<Product> updateProducts(List<Product> productList){
 
-                System.out.println("updateProducts");
+//                System.out.println("updateProducts");
         productList.stream().forEach((p)->{
             productRepo.findById((int) p.getId()).ifPresent((product)-> {
                 product.reduceAmount(p.getAmount());
