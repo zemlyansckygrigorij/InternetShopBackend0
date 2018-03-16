@@ -2,9 +2,74 @@ server:
   port: 8080
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/internetshop
-    username: root
-    password: uhbujhbq
+    url: jdbc:mysql://eu-cdbr-west-02.cleardb.net:3306/heroku_834756c7e78de75
+    username: be2ea4fa10d5c4
+    password: 985d6224
     driver-class-name: com.mysql.jdbc.Driver
 jpa:
     database: MYSQL
+#hibernate:
+#            ddl-auto: update
+
+
+
+
+#server:
+#  port: 8080
+#spring:
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/internetshop
+#    username: root
+#    password: uhbujhbq
+#    driver-class-name: com.mysql.jdbc.Driver
+#jpa:
+#    database: MYSQL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#    server:
+#      port: 8080
+#    #
+#    ## DataBase
+#    spring:
+#      datasource:
+#        url: jdbc:mysql://eu-cdbr-west-01.cleardb.com:3306/heroku_e61a770f4088551?reconnect=true
+#        username: be970b473ede71
+#        password: 2b51098d
+#        driver-class-name: com.mysql.jdbc.Driver
+#      jpa:
+#        database: MYSQL
+#        hibernate:
+#            ddl-auto: update
+#
+
+
+        ## mysql://be970b473ede71:2b51098d@eu-cdbr-west-01.cleardb.com/heroku_e61a770f4088551?reconnect=true
+     ## https://app-student.herokuapp.com/student
+
+#      mysql://be2ea4fa10d5c4:985d6224@eu-cdbr-west-02.cleardb.net/heroku_834756c7e78de75?reconnect=true
+
+#Username: be2ea4fa10d5c4
+#Password:	985d6224 (Reset)
